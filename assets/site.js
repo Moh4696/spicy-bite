@@ -449,6 +449,9 @@
   /* ---------------- boot ---------------- */
   measure(); readScroll(); sizeFlakes(); sizeEmbers();
   addEventListener('resize', () => { sizeFlakes(); sizeEmbers(); });
+  // WebKit can resolve the 680svh story height after this script runs; re-measure whenever it settles.
+  if ('ResizeObserver' in window) new ResizeObserver(() => { measure(); readScroll(); }).observe(story);
+  addEventListener('load', () => { measure(); readScroll(); });
   motionPreference.addEventListener('change', event => {
     reduce = event.matches;
     document.documentElement.classList.toggle('motion', !reduce);
