@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spicy Bite | Indo-Chinese Street Kitchen</title>
+<meta name="description" content="Spicy Bite, a fictional Indo-Chinese street kitchen. Double-fried, wok-tossed, chilli-glazed.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<a class="skip-link" href="#menu">Skip to menu</a>
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="Spicy Bite home">SPICY<span>BITE</span></a>
+  <nav class="links" aria-label="Main">
+    <a href="#menu">Menu</a>
+    <a href="#heat">Heat scale</a>
+    <a href="#visit">Find us</a>
+  </nav>
+  <a class="pill order-link" href="#menu" data-order>Order <span class="order-count" hidden></span><i aria-hidden="true">→</i></a>
+</header>
+
+<main id="top">
+  <!-- ============ THE STORY (pinned, scroll-scrubbed) ============ -->
+  <section class="story" id="story" aria-label="Chilli potato, taken apart">
+    <div class="stage" id="stage">
+      <div class="media" id="media">
+        <img class="poster" id="poster" src="assets/hero.webp" alt="Chilli potato stacked on a fork against a deep crimson background" fetchpriority="high">
+        <video id="v1" muted playsinline preload="auto" aria-hidden="true"></video>
+        <video id="v2" muted playsinline preload="auto" aria-hidden="true"></video>
+        <video id="v3" muted playsinline preload="auto" aria-hidden="true"></video>
+        <img class="anatomy-frame" id="anatomyFrame" src="assets/exploded.webp" alt="" loading="lazy">
+        <div class="mtype" id="mtype" aria-hidden="true">
+          <div class="word w1"><span>S<i class="drip" style="--x:.30;--h:.34;--w:.085;--dl:1.2s"></i></span><span>P</span><span>I</span><span>C<i class="drip" style="--x:.56;--h:.2;--w:.06;--dl:1.5s"></i></span><span>Y<i class="drip" style="--x:.5;--h:.26;--w:.075;--dl:1.35s"></i></span></div>
+          <div class="word w2"><span>B<i class="drip" style="--x:.24;--h:.42;--w:.08;--dl:1.65s"></i></span><span>I</span><span>T</span><span>E<i class="drip" style="--x:.7;--h:.3;--w:.07;--dl:1.8s"></i></span></div>
+        </div>
+        <img class="cut" id="cut" src="assets/hero-cut.webp" alt="">
+        <svg class="labels" id="labels" viewBox="0 0 1920 1080" aria-hidden="true"></svg>
+      </div>
+      <canvas class="flakes" id="flakes" aria-hidden="true"></canvas>
+      <div class="vignette"></div>
+
+      <h1 class="sr-only">Spicy Bite chilli potato, double-fried and wok-tossed</h1>
+
+      <div class="hero-meta" id="heroMeta">
+        <div class="hm-left">
+          <p class="hm-title">Chilli potato</p>
+          <p class="hm-sub">Double-fried, wok-tossed,<br>glazed in chilli garlic.</p>
+        </div>
+        <div class="hm-right">
+          <p class="hm-title">Hot and fresh</p>
+          <p class="hm-sub">At your door in 30 minutes</p>
+        </div>
+        <div class="hm-foot">
+          <span>Stall 14, Ember Lane Night Market</span>
+          <span class="scroll-cue"><b></b>Scroll to take a bite</span>
+          <span>Open till 2 am</span>
+        </div>
+      </div>
+
+      <article class="beat b1" id="b1">
+        <p class="num"><em>The anatomy</em></p>
+        <h2>Six layers.<br>One bite.</h2>
+        <p>Pull the stack apart and every layer has a job. Crunch, sweet, sting, smoke, and a glaze that holds it all together.</p>
+      </article>
+      <article class="beat b2" id="b2">
+        <p class="num"><em>The toss</em></p>
+        <h2>Ninety seconds<br>in a roaring wok.</h2>
+        <p>Flame high, wrist loose. The glaze caramelises onto the edges while the onions keep their snap.</p>
+      </article>
+      <article class="beat b3" id="b3">
+        <p class="num"><em>The landing</em></p>
+        <h2>Your bowl<br>is ready.</h2>
+        <a class="pill big" href="#menu">Explore the menu <i aria-hidden="true">→</i></a>
+      </article>
+
+      <ol class="mob-labels" id="mobLabels" aria-label="What is in it"></ol>
+      <div class="progress" aria-hidden="true"><i id="bar"></i></div>
+    </div>
+  </section>
+
+  <section class="still" aria-labelledby="stillTitle">
+    <img src="assets/exploded.webp" alt="Potato wedges, sliced onion, capsicum, and sesame suspended in chilli-garlic glaze" loading="lazy" width="1920" height="1080">
+    <div>
+      <p class="eyebrow">The anatomy</p>
+      <h2 id="stillTitle">Six layers.<br>One bite.</h2>
+      <p>Double-fried potato, red onion, green capsicum, spring onion, toasted sesame, and chilli-garlic glaze. Tossed over high heat until the glaze caramelises.</p>
+    </div>
+  </section>
+
+  <!-- ============ DRIP INTO CREAM ============ -->
+  <div class="drip-wipe" id="dripWipe" aria-hidden="true">
+    <svg viewBox="0 0 1440 260" preserveAspectRatio="none" id="dripSvg"></svg>
+  </div>
+
+  <!-- ============ MENU ============ -->
+  <section class="cream menu" id="menu">
+    <div class="sec-head">
+      <p class="eyebrow">The heat list</p>
+      <h2>Small menu.<br><em>Big</em> flame.</h2>
+      <p class="lede">Everything is tossed to order in carbon-steel woks. Pick by flavour or pick by heat. We will not judge either way.</p>
+    </div>
+    <ul class="dishes" id="dishes">
+      <li class="dish" data-price="240" data-heat="3">
+        <div><h3>Chilli Potato</h3><p class="desc">Double-fried wedges, onion, capsicum, chilli-garlic glaze, sesame.</p></div>
+        <span class="meter">Heat 3 of 5</span><span class="price">₹240</span>
+      </li>
+      <li class="dish" data-price="290" data-heat="2">
+        <div><h3>Honey Chilli Lotus Stem</h3><p class="desc">Shatter-crisp lotus, wildflower honey, dried red chilli.</p></div>
+        <span class="meter">Heat 2 of 5</span><span class="price">₹290</span>
+      </li>
+      <li class="dish" data-price="320" data-heat="4">
+        <div><h3>Dragon Paneer</h3><p class="desc">Charred paneer in a smoky red chilli and cashew wok sauce.</p></div>
+        <span class="meter">Heat 4 of 5</span><span class="price">₹320</span>
+      </li>
+      <li class="dish" data-price="260" data-heat="3">
+        <div><h3>Schezwan Hakka Noodles</h3><p class="desc">Hand-pulled noodles, house Schezwan, cabbage, spring onion.</p></div>
+        <span class="meter">Heat 3 of 5</span><span class="price">₹260</span>
+      </li>
+      <li class="dish" data-price="250" data-heat="2">
+        <div><h3>Gobi Manchurian Bombs</h3><p class="desc">Cauliflower bites, dark soy, ginger, a long garlic finish.</p></div>
+        <span class="meter">Heat 2 of 5</span><span class="price">₹250</span>
+      </li>
+      <li class="dish" data-price="230" data-heat="1">
+        <div><h3>Burnt Garlic Fried Rice</h3><p class="desc">Smoked jasmine rice, crisp garlic, and tofu.</p></div>
+        <span class="meter">Heat 1 of 5</span><span class="price">₹230</span>
+      </li>
+      <li class="dish" data-price="280" data-heat="5">
+        <div><h3>Ghost Pepper Momos</h3><p class="desc">Steamed, then pan-crisped. Served with a glass of milk.</p></div>
+        <span class="meter">Heat 5 of 5</span><span class="price">₹280</span>
+      </li>
+    </ul>
+    <p class="sr-only" id="orderStatus" role="status"></p>
+  </section>
+
+  <!-- ============ HEAT DIAL ============ -->
+  <section class="heat" id="heat">
+    <div class="heat-inner">
+      <p class="eyebrow">Heat scale</p>
+      <h2 class="heat-name" id="heatName">Proper kick</h2>
+      <p class="heat-desc" id="heatDesc">The house standard. You will feel it, then you will want more.</p>
+      <div class="chillis" id="chillis" aria-hidden="true"></div>
+      <label class="dial">
+        <span class="sr-only">Choose your heat level</span>
+        <input type="range" min="1" max="5" step="1" value="3" id="heatRange">
+      </label>
+      <div class="dial-ticks" aria-hidden="true"><span>Mild hum</span><span>Warm</span><span>Proper kick</span><span>Fire drill</span><span>Volcano</span></div>
+    </div>
+    <canvas id="embers" aria-hidden="true"></canvas>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="track">
+      <span>Hot and fresh</span><b>✺</b><span>Wok-tossed to order</span><b>✺</b><span>Open till 2 am</span><b>✺</b><span>Double-fried, twice crisp</span><b>✺</b>
+      <span>Hot and fresh</span><b>✺</b><span>Wok-tossed to order</span><b>✺</b><span>Open till 2 am</span><b>✺</b><span>Double-fried, twice crisp</span><b>✺</b>
+    </div>
+  </div>
+
+  <!-- ============ VISIT / ORDER ============ -->
+  <section class="cream visit" id="visit">
+    <div class="visit-grid">
+      <div>
+        <p class="eyebrow">Find us</p>
+        <h2>Follow the<br><em>smoke.</em></h2>
+        <p class="lede">A six-wok counter at the back of the night market. Grab a stool or take it home in a box that keeps the crunch.</p>
+        <a class="pill big dark order-link" href="#menu" data-order>Start a demo order <i aria-hidden="true">→</i></a>
+      </div>
+      <dl class="facts">
+        <div><dt>Where</dt><dd>Stall 14, Ember Lane Night Market</dd></div>
+        <div><dt>When</dt><dd>Tue to Sun, 5 pm till 2 am</dd></div>
+        <div><dt>Delivery</dt><dd>30 minutes, 5 km around the market</dd></div>
+        <div><dt>House rule</dt><dd>Heat 5 comes with a glass of milk</dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<dialog class="order" id="order" aria-labelledby="orderTitle">
+  <div class="order-head">
+    <div>
+      <p class="eyebrow">Demo order</p>
+      <h2 id="orderTitle" tabindex="-1">Your bag</h2>
+    </div>
+    <form method="dialog"><button class="order-close" type="submit" aria-label="Close order">×</button></form>
+  </div>
+  <p class="order-message" id="orderMessage">Add dishes from the menu to build your bag.</p>
+  <ul class="order-items" id="orderItems"></ul>
+  <div class="order-total" id="orderTotal" hidden><span>Subtotal</span><strong></strong></div>
+  <div class="order-actions">
+    <a class="pill" href="#menu" id="browseMenu">Browse menu <i aria-hidden="true">→</i></a>
+    <button type="button" class="pill dark" id="completeOrder" hidden>Complete demo order <i aria-hidden="true">→</i></button>
+  </div>
+</dialog>
+
+<footer class="foot">
+  <p class="foot-mark">SPICY<span>BITE</span></p>
+  <p class="foot-note">Spicy Bite is a fictional restaurant. A concept site.</p>
+</footer>
+
+<script src="assets/site.js" defer></script>
+</body>
+</html>
